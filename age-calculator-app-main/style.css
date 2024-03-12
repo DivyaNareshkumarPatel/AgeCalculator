@@ -1,0 +1,126 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: "Poppins", sans-serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(0, 0%, 94%);
+}
+.container {
+    width: 100%;
+    background-color: white;
+    max-width: 550px;
+    margin: 0 auto;
+    border-radius: 20px 20px 100px 20px;
+}
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 90%;
+    }
+    .button{
+        justify-content: center !important;
+    }
+}
+@media screen and (max-width: 480px) {
+    .container {
+        max-width: 90%;
+    }
+    input{
+        max-width: 70px;
+    }
+    .date div{
+        margin-right: 10px;
+    }
+}
+.date{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-top: 40px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    margin-right: 10px;
+}
+hr{
+    margin-left: 30px;
+    margin-right: 30px;
+    border: 1px solid hsl(0, 0%, 86%);
+}
+.date div{
+    margin-right: 20px;
+    position: relative;
+}
+label{
+    font-size: 12px;
+    color: hsl(0, 1%, 44%);
+    font-weight: 600;
+}
+input{
+    height: 40px;
+    width: 90px;
+    font-size: 20px;
+    font-weight: 600;
+    padding-left: 5px;
+    border: 2px solid hsl(0, 0%, 86%);
+    outline: 0;
+    border-radius: 5px;
+}
+.button{
+    display: flex;
+    justify-content: right;
+}
+button{
+    background-color: hsl(259, 100%, 65%);
+    border-radius: 50%;
+    border: 0.5px solid hsl(0, 0%, 86%);
+    height: 50px;
+    width: 50px;
+    margin-right: 30px;
+    margin-top: -25px;
+}
+img{
+    width: 25px;
+}
+.purple{
+    color: hsl(259, 100%, 65%);
+}
+.a{
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+.a div{
+    font-size: 50px;
+    font-weight: 700;
+    font-style: italic;
+}
+.danger{
+    border-color: hsl(0, 100%, 67%);
+}
+.empty:after{
+    content: 'This field is required';
+    font-size: 9px;
+    color: hsl(0, 100%, 67%);
+    position:absolute;
+}
+.validDate::after{
+    content: 'Must be a valid date';
+    font-size: 9px;
+    color: hsl(0, 100%, 67%);
+    position:absolute;
+}
+.validMonth::after{
+    content: 'Must be a valid month';
+    font-size: 9px;
+    color: hsl(0, 100%, 67%);
+    position:absolute;
+}
+.validYear::after{
+    content: 'Must be a valid year';
+    font-size: 9px;
+    color: hsl(0, 100%, 67%);
+    position:absolute;
+}
